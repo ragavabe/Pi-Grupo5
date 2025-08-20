@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Corretor Ortográfico com IA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo" aria-label="Logo">Logo</div>
+  <h1>Corretor com IA</h1>
+  <nav>
+    <a href="#"><span>🏠</span> Home</a>
+    <a href="#contato"><span>🟢</span> Contato</a>
+    <a href="#sobre"><span>👥</span> Sobre nós</a>
+    <a href="#"><span>⚙️</span> Configurações</a>
+    <a href="#exemplo"><span>📄</span> Exemplo de correção</a>
+  </nav>
+</header>
+
+<main>
+  <section class="sobre" id="sobre" aria-label="Sobre o site">
+    <h2>Sobre o Site</h2>
+    <p>Este site é um <strong>corretor ortográfico inteligente</strong> que utiliza Inteligência Artificial para identificar e sugerir correções gramaticais, ortográficas e de estilo.</p>
+
+    <h3>O que é Inteligência Artificial?</h3>
+    <p>A Inteligência Artificial (IA) cria sistemas capazes de realizar tarefas que normalmente exigiriam a inteligência humana, aprendendo com dados, reconhecendo padrões e tomando decisões. Ela está em assistentes virtuais, recomendações de conteúdo, reconhecimento de voz/imagem e muito mais. Falamos aqui de IA “estreita” (tarefas específicas) e da pesquisa por IA “geral”.</p>
+    
+    <h3>Como funciona o corretor?</h3>
+    <ol>
+      <li>Insira/cole um texto no editor.</li>
+      <li>A IA analisa e propõe correções e melhorias.</li>
+      <li>Você revisa e aplica as sugestões.</li>
+    </ol>
+
+    <h3>Vantagens</h3>
+    <ul>
+      <li>Detecta erros difíceis de notar.</li>
+      <li>Propõe melhorias de clareza e estilo.</li>
+      <li>Rápido e prático.</li>
+    </ul>
+  </section>
+
+  <section class="editor" aria-label="Editor de texto para correção">
+    <div class="toolbar">
+      <label for="texto">Inserir texto</label>
+
+      <div class="toolbar-actions">
+        <button id="btnColar" title="Colar texto">📋 Colar</button>
+        <button id="btnCarregar" title="Carregar documento .txt">⬇️ Carregar</button>
+        <input id="inputArquivo" type="file" accept=".txt" hidden>
+
+        <button id="btnNegrito" title="Negrito (aplica no trecho selecionado)">B</button>
+
+        <div class="fontes">
+          <label for="selectFonte" class="sr-only">Fonte</label>
+          <select id="selectFonte" title="Fonte">
+            <option value="system-ui" selected>System</option>
+            <option value="Arial, Helvetica, sans-serif">Arial</option>
+            <option value="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Segoe UI</option>
+            <option value="'Times New Roman', Times, serif">Times</option>
+            <option value="'Courier New', Courier, monospace">Courier</option>
+          </select>
+        </div>
+
+        <button id="btnLink" title="Inserir link no trecho selecionado">🔗 Link</button>
+        <button id="btnUndo" title="Voltar (Ctrl+Z)">↩︎ Voltar</button>
+        <button id="btnRedo" title="Avançar (Ctrl+Y)">↪︎ Avançar</button>
+      </div>
+    </div>
+
+    <textarea id="texto" placeholder="Cole seu texto aqui para correção..."></textarea>
+
+    <div class="acoes-editor-bottom">
+      <button id="btnCorrigir" class="primary">✅ Corrigir com IA</button>
+      <button id="btnLimpar" class="ghost">🗑️ Limpar</button>
+    </div>
+  </section>
+
+  <section class="resultados" aria-label="Resultados da correção">
+    <div class="tabs">
+      <button class="tab active" data-tab="todos">Todos</button>
+      <button class="tab" data-tab="gramatica">Gramática</button>
+      <button class="tab" data-tab="recomendacoes">Recomendações</button>
+    </div>
+
+    <div id="saida" class="resultado-conteudo empty">
+      Ainda não há nada a verificar!<br>
+      Comece adicionando um texto ao editor.
+    </div>
+  </section>
+</main>
+
+<section class="exemplo" id="exemplo">
+  <h2>Correção de Textos com o Uso de IA</h2>
+  <div class="comparacao">
+    <div class="corrigido">
+      <h3>Texto corrigido:</h3>
+      <p>O futebol é um dos esportes mais populares do mundo...</p>
+      <div class="icone">✋</div>
+    </div>
+    <div class="nao-corrigido">
+      <h3>Texto não corrigido:</h3>
+      <p>O futebol é um dos esportes mais popular do mundo...</p>
+      <div class="icone">👎</div>
+    </div>
+  </div>
+</section>
+
+<section class="servicos" id="servicos">
+  <h2>Para que servimos?</h2>
+  <p>Nossa ferramenta ajuda a escrever melhor, corrigindo ortografia, gramática e pontuação, e oferecendo explicações para aprendizado contínuo.</p>
+</section>
+
+<footer>
+  <section class="contato" id="contato">
+    <h2>Contato</h2>
+    <ul>
+      <li>📧 Email: <a href="mailto:trabalhoifc096@gmail.com">trabalhoifc096@gmail.com</a></li>
+      <li>📞 Telefone: (49) 99126-5334</li>
+      <li>📍 Endereço: BR-283, IFC - Concórdia-SC</li>
+    </ul>
+  </section>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
