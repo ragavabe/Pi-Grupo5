@@ -11,6 +11,105 @@ body {
   background: #f9f9f9;
 }
 
+body.claro {
+  background: #f5f5f5;
+  color: #111;
+}
+
+body.escuro {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+body.escuro a {
+  color: #90caf9;
+}
+body.claro a {
+  color: #0066cc;
+}
+
+body.escuro textarea,
+body.escuro input,
+body.escuro select {
+  background: #1e1e1e;
+  color: #e0e0e0;
+  border: 1px solid #333;
+}
+
+body.claro textarea,
+body.claro input,
+body.claro select {
+  background: #fff;
+  color: #111;
+  border: 1px solid #ccc;
+}
+
+body.escuro button {
+  background: #2a2a2a;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  transition: 0.3s;
+}
+
+body.escuro button:hover {
+  background: #3a3a3a;
+}
+
+body.claro button {
+  background: #fff;
+  color: #111;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+body.claro button:hover {
+  background: #f0f0f0;
+}
+
+body.escuro section {
+  background: #1c1c1c;
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+body.claro section {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.configuracoes {
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+body.claro .configuracoes {
+  background: #fafafa;
+  color: #111;
+}
+
+body.escuro .configuracoes {
+  background: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.escuro .comparacao div {
+  background: #1c1c1c;
+  color: #e0e0e0;     
+}
+
+body.escuro header a,
+body.escuro header h1,
+body.escuro .logo {
+  color: #1c1c1c; 
+}
+
 header {
   background: #2EDB91;
   color: #fff;
@@ -20,6 +119,35 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   border-bottom: 4px solid #00337f;
+}
+
+.btn-tema {
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+body.claro .btn-tema {
+  background: #eaeaea;
+  color: #111;
+}
+
+body.escuro .btn-tema {
+  background: #2a2a2a;
+  color: #e0e0e0;
+}
+
+.btn-tema:hover {
+  transform: scale(1.05);
+}
+
+.btn-tema.ativo {
+  background: #4CAF50;
+  color: #fff;
 }
 
 header .logo {
@@ -214,6 +342,42 @@ button.ghost:hover {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+.configuracoes {
+  padding: 2rem;
+  background: #222;
+  color: #f0f0f0;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+.configuracoes h2 {
+  margin-bottom: 1rem;
+}
+
+.config-item {
+  margin: 1rem 0;
+}
+
+.config-item label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#salvar {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#salvar:hover {
+  background: #3e8e41;
+}
+
 .comparacao {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -275,4 +439,11 @@ footer li {
 footer a {
   color: #fff;
   text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark-mode-container,
+  .dark-mode-text {
+    color: #444; 
+  }
 }
