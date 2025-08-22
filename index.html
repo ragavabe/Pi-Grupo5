@@ -15,7 +15,7 @@
     <a href="#"><span>🏠</span> Home</a>
     <a href="#contato"><span>🟢</span> Contato</a>
     <a href="#sobre"><span>👥</span> Sobre nós</a>
-    <a href="#"><span>⚙️</span> Configurações</a>
+    <a href="#configurações"><span>⚙️</span> Configurações</a>
     <a href="#exemplo"><span>📄</span> Exemplo de correção</a>
   </nav>
 </header>
@@ -92,6 +92,32 @@
     </div>
   </section>
 </main>
+
+<section class="configuracoes" id="configurações">
+  <h2>Configurações</h2>
+
+  <div class="tema-toggle">
+    <span>Tema:</span>
+    <button id="btnClaro" class="btn-tema ativo">☀️ Claro</button>
+    <button id="btnEscuro" class="btn-tema">🌙 Escuro</button>
+  </div>
+
+
+  <div class="config-item">
+    <label for="fonte">Tamanho da fonte:</label>
+    <input type="range" id="fonte" min="12" max="24" value="16">
+  </div>
+
+  <div class="config-item">
+    <label>
+      <input type="checkbox" id="notificacoes" checked>
+      Ativar notificações
+    </label>
+  </div>
+
+  <button id="salvar">Salvar Configurações</button>
+</section>
+
 
 <section class="exemplo" id="exemplo">
   <h2>Correção de Textos com o Uso de IA</h2>
