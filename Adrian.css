@@ -1,0 +1,36 @@
+body {
+    background-color: #faf0ea;
+    margin : 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #faf0ea;
+    padding: 0px;
+    margin-top: 0%;
+    text-shadow: 0 0 10px #0000002c;
+    box-shadow: 0 0 10px #0000002c;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 10px 0;
+    padding-left: 0;
+    text-shadow: 0 0 10px #0000002c;
+}
+
+.logo h1 {
+    margin: 10px;
+    padding: 0 10px;
+    font-size: 35px;
+    margin-left: 70%;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #333;
+}
