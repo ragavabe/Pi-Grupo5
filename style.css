@@ -417,6 +417,14 @@ button.ghost:hover {
   color: #2EDB91;
 }
 
+.pessoas {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
 footer {
   background: #2EDB91;
   color: #fff;
