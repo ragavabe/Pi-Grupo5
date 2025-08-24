@@ -101,7 +101,6 @@ button:hover {
 
 .menu a:hover {
   color: #efefef;
-  transform: scale(1.05);
 }
 
 /* Main layout */
@@ -310,4 +309,11 @@ footer li {
 footer a {
   color: #fff;
   text-decoration: underline;
+}
+
+.instagram-logo {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 0px;
 }
