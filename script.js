@@ -1,4 +1,3 @@
-
 const escapeHTML = (s) => s
   .replaceAll("&","&amp;")
   .replaceAll("<","&lt;")
@@ -262,4 +261,10 @@ document.getElementById("btnSalvar").addEventListener("click", () => {
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
+});
+
+const btnTopo = document.getElementById('btnTopo');
+
+btnTopo.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
