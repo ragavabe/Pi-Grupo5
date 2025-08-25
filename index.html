@@ -7,6 +7,7 @@
   <title>Corretor Ortográfico com I.A</title>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="circúlo verde.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -14,37 +15,23 @@
   <header class="header">
     <div class="header-content">
       <div class="logo">
-
         <img class="logo-img" src="Logo verde.png" alt="Logo"><h1>Corretor com I.A</h1>
-
       </div>
       <div class="menu">
-
         <b><a href="#"><span>🏠</span> Home</a></b>
-
         <b><a href="#exemplo"><span>📄</span> Exemplo de correção</a></b>
-
         <b><a href="#servicos"><span>👥</span> Sobre nós</a></b>
-
         <b><a href="#contato"><span>📢</span> Contato</a></b>
-
-
       </div>      
     </div>
   </header>
 
 <main>
-
   <section class="sobre" id="sobre" aria-label="Sobre o site">
-
     <h2><strong>Sobre o Site</strong></h2>
-
     <p class="texto">Este site é um <strong>Corretor Ortográfico Inteligente</strong> que utiliza <strong>Inteligência Artificial (I.A)</strong> para identificar e sugerir correções gramaticais, ortográficas e de estilo.</p>
-
     <p class="texto">Ideal para estudantes, profissionais e qualquer pessoa que deseja aperfeiçoar sua escrita, o corretor com IA combina praticidade com inovação, tornando o processo de revisão mais simples, acessível e confiável.</p>
-
     <h3><strong>O que é Inteligência Artificial (I.A)?</strong></h3>
-
     <p class="texto">A I.A cria sistemas capazes de realizar tarefas que normalmente exigiriam a inteligência humana, aprendendo com dados, reconhecendo padrões e tomando decisões. Ela está em assistentes virtuais, recomendações de conteúdo, reconhecimento de voz/imagem e muito mais. Falamos aqui de I.A “estreita” (tarefas específicas) e da pesquisa por I.A “geral”.</p>
 
     <h3><strong>Como funciona o corretor?</strong></h3>
@@ -53,167 +40,106 @@
       <li>Insira/cole um texto no editor.</li>
       <li>A I.A analisa e propõe correções e melhorias.</li>
       <li>Você revisa e aplica as sugestões.</li>
-    
     </ol>
 
     <h3><strong>Pontos Fortes</strong></h3>
 
     <ol class="lista">
-
       <li>I.A está crescendo muito no mercado de sites.</li>
       <li>Abrange muitas áreas no mercado de trabalho.</li>
       <li>I.A de fácil uso e programação.</li>
-
     </ol>
 
     <h3><strong>Pontos Fracos</strong></h3>
 
     <ol class="lista">
-
       <li>Já existem vários outros sites realizando a mesma função.</li>
       <li>Pode não entender contextos complexos/O atual nível das I.A’s não é o suficiente para as correções perfeitas.</li>
       <li>Uso irresponsável deste site pode causar dependência nele.</li>
       <li>Site tende a ser chato</li>
       <li>Necessidade de API de I.A.</li>
-
     </ol>
-
   </section>
 
 
   <section class="editor" aria-label="Editor de texto para correção">
-
     <div class="toolbar">
-
       <label for="texto">Inserir texto</label>
-
       <div class="toolbar-actions">
-
         <button id="btnColar" title="Colar texto">📋 Colar</button>
-
         <button id="btnCarregar" title="Carregar documento .txt">⬇️ Carregar</button>
-
         <input id="inputArquivo" type="file" accept=".txt" hidden>
-
-
         <button id="btnNegrito" title="Negrito (aplica no trecho selecionado)"><strong>B</strong></button>
 
         <div class="fontes">
-
           <label>Fonte:</label>
-
           <select id="selectFonte" title="Fonte">
-
             <option value="system-ui" selected>System</option>
-
             <option value="Arial, Helvetica, sans-serif">Arial</option>
-
             <option value="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Segoe UI</option>
-
             <option value="'Times New Roman', Times, serif">Times</option>
-
             <option value="'Courier New', Courier, monospace">Courier</option>
-
           </select>
 
-        </div>
-
+    </div>
         <button id="btnLink" title="Inserir link no trecho selecionado">🔗 Link</button>
-
         <button id="btnUndo" title="Voltar (Ctrl+Z)">↩︎ Voltar</button>
-
         <button id="btnRedo" title="Avançar (Ctrl+Y)">↪︎ Avançar</button>
-
       </div>
 
     </div>
-
     <textarea id="texto" placeholder="Cole seu texto aqui para correção..."></textarea>
-
     <div class="acoes-editor-bottom">
-
       <button id="btnCorrigir" class="ghost">✅ Corrigir com I.A</button>
-
       <button id="btnLimpar" class="primary">🗑️ Limpar</button>
-
     </div>
-
   </section>
 
   <section class="resultados" aria-label="Resultados da correção">
 
     <div class="tabs">
-
       <button class="tab active" data-tab="todos">Todos</button>
-
       <button class="tab" data-tab="gramatica">Gramática</button>
-
       <button class="tab" data-tab="recomendacoes">Recomendações</button>
-
     </div>
 
     <div id="saida" class="resultado-conteudo empty">
-
       Ainda não há nada a verificar!<br>
-
       Comece adicionando um texto ao editor.
-
     </div>
-
   </section>
 
 <section class="exemplo" id="exemplo">
-
   <h2>Correção de Textos com o Uso de I.A</h2>
 
   <div class="comparacao">
 
     <div class="corrigido">
-
       <h3><strong class="icone">👍</strong>Texto corrigido:</h3>
-
       <p class="texto">Essa semana tenho duas provas, três trabalhos e uma tonelada de extras pra fazer, socorro!</p>
-
-
     </div>
 
     <div class="nao-corrigido">
-
       <h3><strong class="icone">👎</strong>Texto não corrigido:</h3>
-
       <p class="texto">Essa cemana tenho duas provas tres trabalhos e uma tonelada de estras pra fazer socoro!</p>
-
-
     </div>
 
   </div>
-
   </section>
 
   <section class="servicos" id="servicos">
-
     <h2>Sobre nós</h2>
-
     <ul class="lista">
-      
       <li><strong>Adrian Ramos:</strong>  Lider do grupo</li>
-      
       <li><strong>Cauã Fochesatto:</strong>   Vice-líder do grupo</li>
-      
       <li><strong>Gabriela Wobeto:</strong>  Membro do grupo</li>
-      
       <li><strong>Lucas Nogueira:</strong>  Membro do grupo</li>
-
     </ul>
-
   </section>
 
   <section class="servicos" id="servicos">
-
     <h2>Por que? </h2>
-
     <p class="texto">Com o tema sendo a disciplina de língua portuguesa, decidimos andar em direção a algo que poderia ser prático para o dia a dia, lembrando assim do fato que muitos não se dão conta dos erros que cometem a escrever com a mesma, então a proposta foi um site com uma ferramenta de correção de texto.</p>
-
   </section>
 
   <section class="servicos" id="servicos">
@@ -223,37 +149,20 @@
   </section>
 </main>
 
-
 <footer>
-
   <section id="contato">
-
     <h2>Contato</h2>
-
     <ul class="contato">
-
       <li>📧 Email: <a href="mailto:trabalhoifc096@gmail.com">trabalhoifc096@gmail.com</a></li>
-
       <li>📞 Telefones: (49) 99126-5334; (49) 99811-1850; (49) 99901-3517; (49) 99830-7742</li>
-
-      <li><img class="instagram-logo" src="Insta.png">Instagram: </li>
-
+      <li><i class="fa-brands fa-instagram"></i> Instagram:</li>
       <li><a href="https://www.instagram.com/adrian.g.rb" target="_blank">@Adrian.g.rb</a></li>
-
       <li><a href="https://www.instagram.com/gabriela_wobeto" target="_blank">@gabriela_wobeto</a></li>
-
       <li><a href="https://www.instagram.com/lucas._.nogueira" target="_blank">@lucas._.nogueira</a></li>
-
       <li>📍 Endereço: BR-283, IFC - Concórdia-SC</li>
-
     </ul>
-
   </section>
-
 </footer>
-
 <script src="script.js"></script>
-
 </body>
-
 </html>
