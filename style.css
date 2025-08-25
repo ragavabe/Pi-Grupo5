@@ -291,7 +291,7 @@ button.ghost:hover {
 /* Footer */
 footer {
   background: #55d39c;
-  color: #fff;
+  color: #000000;
   padding: 2rem;
   text-align: center;
 }
@@ -309,6 +309,11 @@ footer li {
 }
 
 footer a {
-  color: #fff;
+  color: #000000;
   text-decoration: underline;
+}
+
+.instagram-logo {
+  width: 20px;
+  height: 20px;
 }
