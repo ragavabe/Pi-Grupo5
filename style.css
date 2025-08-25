@@ -138,7 +138,7 @@ main {
 }
 
 .texto {
-  margin-left: 2%;
+  padding-left: 2%;
   margin-bottom: 1rem;
   text-align: justify;
 }
@@ -163,7 +163,7 @@ main {
 
 .toolbar label {
   font-weight: bold;
-  margin-right: 1rem;
+  margin-right: 0;
 }
 
 .toolbar-actions {
@@ -316,4 +316,9 @@ footer a {
 .instagram-logo {
   width: 20px;
   height: 20px;
+}
+
+.contato a:hover {
+  color: #efefef;
+  transform: scale(1.05);
 }
