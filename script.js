@@ -35,11 +35,6 @@ document.getElementById("inputArquivo").addEventListener("change", (e) => {
   reader.readAsText(file, "utf-8");
 });
 
-document.getElementById("btnNegrito").addEventListener("click", () => {
-  wrapSelection("**","**"); 
-  $texto.focus();
-});
-
 document.getElementById("selectFonte").addEventListener("change", (e) => {
   $texto.style.fontFamily = e.target.value;
 });
