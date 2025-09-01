@@ -64,6 +64,11 @@ button:hover {
   white-space: nowrap;
 }
 
+.Logo-Ifc {
+  max-width: 10%;
+  height: 10%;
+}
+
 .logo-img {
   max-width: 20%;
   height: 20%;
