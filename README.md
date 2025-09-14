@@ -2,7 +2,7 @@
 
 Passo 1: Clonar o repositório
 git clone https://github.com/ragavabe/Pi-Grupo5
-cd <nome-da-pasta>
+cd PI-GRUPO5
 
 Passo 2: Configurar variáveis de ambiente
 Duplique o arquivo `.env.exemplo`
