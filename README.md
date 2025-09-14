@@ -21,7 +21,7 @@ Esse comando vai baixar todas as bibliotecas necessárias para o projeto funcion
 
 Passo 4: Iniciar o servidor
 Execute:
-`node server.js`
+`node src/server.js`
 
 Se tudo estiver configurado corretamente, o projeto ficará disponível em:
 http://localhost:3000

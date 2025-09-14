@@ -2,7 +2,9 @@ import express from "express";
 import fetch from "node-fetch";
 import cors from "cors";
 import dotenv from "dotenv";
-dotenv.config();
+dotenv.config({ path: './config/.env' });
+
+console.log('Chave da API:', process.env.GEMINI_API_KEY); 
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
