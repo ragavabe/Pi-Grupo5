@@ -1,7 +1,18 @@
 # Instruções para rodar o projeto
 
-1. Clonar o repositório
-2. Duplicar o arquivo .env.exemplo e renomear para .env
-3. Preencha as váriaveis do .env
-4. Rode o comando `npm install`
-5. Rode o comando `node server.js`
+Passo 1: Clonar o repositório
+git clone https://github.com/ragavabe/Pi-Grupo5
+cd <nome-da-pasta>
+
+Passo 2: Configurar variáveis de ambiente
+Duplique o arquivo `.env.exemplo`
+Renomeie para `.env`
+Preencha as variáveis de acordo com as informações do seu ambiente
+
+Passo 3: Instalar dependências
+`npm install`
+
+Passo 4: Iniciar o servidor
+`node server.js`
+
+O projeto ficará disponível em http://localhost:3000 ou na porta definida no arquivo .env.
